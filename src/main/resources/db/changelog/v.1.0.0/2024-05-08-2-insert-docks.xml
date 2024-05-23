@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+    <changeSet logicalFilePath="2024-05-08-2-insert-docks"
+        id="2024-05-08-2-insert-docks" author="s.m">
+        <insert tableName="dock">
+            <column name="view" value="Справка"/>
+            <column name="date" value="2024-03-06"/>
+            <column name="description" value="Справка на сдачу в ГАИ"/>
+            <column name="patient" value="Иванов Иван Иваныч"/>
+            <column name="state" value="На рассмотрении"/>
+        </insert>
+
+        <insert tableName="dock">
+            <column name="view" value="Справка"/>
+            <column name="date" value="2024-02-12"/>
+            <column name="description" value="Договор на оказание услуг"/>
+            <column name="patient" value="Сергей Коле Платыцин"/>
+            <column name="state" value="На рассмотрении"/>
+        </insert>
+
+        <insert tableName="dock">
+            <column name="view" value="Справка"/>
+            <column name="date" value="2024-06-25"/>
+            <column name="description" value="Мед. заключение"/>
+            <column name="patient" value="Дочерняя Евгения Николаявна"/>
+            <column name="state" value="Выдана"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+    <changeSet logicalFilePath="2024-05-08-1-create-table-dock"
+        id="2024-05-08-1-create-table-dock" author="s.m">
+        <createTable tableName="dock">
+            <column name="id" type="serial">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+
+            <column name="view" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="date" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="description" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="patient" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            
+            <column name="state" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    
+    </changeSet>
+
+</databaseChangeLog>
